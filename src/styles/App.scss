@@ -1,0 +1,274 @@
+.App-main-container{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background-image: url('../../public/desk.jpeg');
+    background-size:cover ;
+}
+
+.App-header-main-container{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.App-header-toggle-container{
+    height: 100px;
+    margin-top: 40px;
+    width: 350px;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 2px solid rgb(158, 158, 158);
+    box-shadow: 5px 5px 8px 5px rgba(128, 128, 128, 0.39);
+}
+
+.App-toggle-FibonacciCalculator-button{
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    border-style: none;
+    color: white;
+    background-color: rgb(65, 124, 240);
+    border-bottom: 6px solid rgb(54, 108, 218);
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    outline: none
+}
+
+.App-toggle-classicCalculator-button{
+    @extend .App-toggle-FibonacciCalculator-button;
+}
+
+.button-off{
+    border-bottom: none; 
+}
+
+.App-calculator-main-container{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+// ---------------- Normal calculator ----------------
+
+.FibonacciCalculator-main-container{
+    width: 600px;
+    height: auto;
+    border-radius: 5px;
+    border: 2px solid rgb(53, 53, 53);
+    background-color: white;
+    box-shadow: 5px 5px 8px 5px rgba(128, 128, 128, 0.39);
+}
+
+.FibonacciCalculator-title-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.FibonacciCalculator-calculator-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.FibonacciCalculator-caculator-input{
+    border-radius: 5px;
+    width: 150px;
+    height: 35px;
+    border: 2px solid rgb(158, 158, 158);
+    outline: none;
+}
+
+.FibonacciCalculator-calculator-button{
+    width: 120px;
+    border-radius: 5px;
+    height: 40px;
+    outline: none;
+    cursor: pointer;
+    outline: none;
+    border: 1px solid rgb(158, 158, 158);
+    &:hover{
+    background-color: rgba(180, 180, 180, 0.8);   
+    color: white;
+    }
+}
+
+.FibonacciCalculator-reset-button-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.FibonacciCalculator-reset-button{
+    @extend .FibonacciCalculator-calculator-button;
+    height: 30px;
+    width: 60px;
+    &:hover{
+        background-color: rgb(240, 15, 15);
+    }
+}
+
+.FibonacciCalculator-result-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.FibonacciCalculator-result-text{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+// ---------------- Classic calculator ----------------
+
+ // CALCULATOR SCREEN CONTAINER:
+
+.classicCalculator-main-container{
+    height: 500px;
+    width: 350px;
+    background-color: rgb(231,225,218);
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    box-shadow: 5px 5px 8px 5px rgba(128, 128, 128, 0.39);
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 20px;
+}
+
+.classicCalculator-screen-container{
+    height: 40px;
+    width: 80%;
+    background-color: rgb(198,194,175);
+    margin-top: 30px;
+    border-radius: 5px;
+    border: 3px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    overflow: hidden;
+    font-family: 'Press Start 2P', sans-serif;
+}
+
+.classicCalculator-screen-left-inner-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.classicCalculator-screen-number{
+    margin-right: 10px;
+}
+
+.classicCalculator-screen-text{
+    font-size: 18px;
+    font-family: 'Chakra Petch', sans-serif;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.classicCalculator-screen-result{
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+// CALCULATOR OPERATORS
+
+.classicCalculator-operators-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-weight: 700;
+    height: 70px;
+    width: 86%;
+    margin-top: 40px;
+    font-size: 25px;
+    margin-right: 7px;
+}
+ // CALCULATOR KEYS CONTAINER: 
+ 
+.classicCalculator-keys-container{
+    width: 80%;
+    height: 272px;
+    display: flex;
+}
+
+
+
+.classicCalculator-numbers-container{
+    width: 75%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 70px 70px 70px;
+    grid-template-columns: 70px 70px 70px;
+}
+
+.classicCalculator-number-key{
+    background-color: rgb(231,225,218);
+    height: 60px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(96,100,91);
+    border-bottom: 3px solid rgb(75, 77, 73);
+    border-radius: 3px;
+    cursor: pointer;
+    &:hover{
+        border-bottom: 1px solid black;
+    }
+}
+
+.classicCalculator-bottom-container{
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.classicCalculator-number-cero{
+   @extend .classicCalculator-number-key;
+   width: 130px;
+}
+
+.classicCalculator-operation-keys-container{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.classicCalculator-reset-button{
+    @extend .classicCalculator-number-key;
+    background-color: rgb(99,104,96);
+    color: white
+}
+
+.classicCalculator-calculate-button{
+    @extend .classicCalculator-number-key;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    background-color: rgb(238,78,52);
+    border-bottom: 3px solid rgb(199, 69, 49);
+    color: white;
+}
